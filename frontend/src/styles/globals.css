@@ -48,7 +48,7 @@ a {
 }
 
 .container h1 {
-  margin-top: 80px; /* Espaço somente no título */
+  margin-top: 80px; 
 }
 
 .images-container {
@@ -69,3 +69,153 @@ a {
   font-size: 1.1em;
   color: #555;
 }
+
+.footer-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer-bar .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.footer-text {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+
+
+/* Estilo para o título */
+.latita-title {
+  font-size: 2.5rem; /* Tamanho do texto do título */
+  color: #000000; /* Cor do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-weight: bold; /* Negrito */
+}
+
+/* Estilo para o parágrafo */
+.latita-description {
+  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  color: #333; /* Cor do texto */
+  max-width: 800px; /* Largura máxima do parágrafo */
+  margin: 0 auto; /* Centraliza o parágrafo */
+  padding: 0 20px; /* Espaçamento nas laterais */
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Adicionando um efeito ao parágrafo ao passar o mouse */
+.latita-description:hover {
+  background-color: rgba(255, 255, 255, 1); /* Fundo sólido ao passar o mouse */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+
+
+
+/* Estilo para o texto do rodapé */
+.footer-text {
+  font-size: 12px; /* Tamanho do texto */
+  color: #ffffff; /* Cor do texto (branco) */
+  text-align: center; /* Centraliza o texto */
+  margin: 5px 0; /* Margem acima e abaixo do texto */
+  opacity: 0.8; /* Levemente transparente */
+  transition: opacity 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito hover para o texto do rodapé */
+.footer-text:hover {
+  opacity: 1; /* Torna o texto totalmente opaco ao passar o mouse */
+}
+
+
+
+.footer-bar {
+  padding: 0.5rem 1rem; /* Ajusta o padding superior/inferior */
+  height: 50px; /* Define uma altura fixa (opcional) */
+  display: flex; /* Usado para alinhar o conteúdo */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-bar {
+  display: flex; /* Usado para alinhar o conteúdo */
+  align-items: center; /* Centraliza o conteúdo verticalmente */
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.footer-bar {
+  background-color: rgba(0, 0, 0, 0.6); /* Preto com 90% de opacidade */
+  color: white; /* Cor do texto da Navbar */
+}
+
+.footer-bar .nav-link {
+  color: white; /* Cor dos links */
+  transition: color 0.3s; /* Efeito de transição suave para o hover */
+}
+
+.footer-bar .nav-link:hover {
+  color: #ffa500; /* Cor dos links ao passar o mouse */
+}
+
+.images-container2 {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.images-container2 img {
+  width: 300px;  /* Ajuste conforme necessário */
+  height: 300px; /* Ajuste conforme necessário */
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+
+
+
+
+.tabs-container {
+  display: flex;
+  flex-direction: column; /* Para alinhar verticalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  height: 100vh; /* A altura total da tela */
+}
+
+.table-container {
+  width: 100%; /* Largura da tabela */
+  margin-top: 20px; /* Espaço acima da tabela */
+}
+
+.custom-table {
+  width: 100%; /* Tabela ocupa toda a largura do contêiner */
+  border-collapse: collapse; /* Remove espaçamento entre as células */
+  background-color: white; /* Fundo branco para a tabela */
+  color: black; /* Cor do texto preto */
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 30px; /* Espaçamento interno das células */
+  text-align: left; /* Alinha o texto à esquerda */
+  border: 1px solid #ccc; /* Borda cinza clara para as células */
+}
+
+.custom-table th {
+  background-color: #f0f0f0; /* Fundo cinza claro para o cabeçalho */
+}
+
+
