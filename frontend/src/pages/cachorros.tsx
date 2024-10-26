@@ -52,7 +52,7 @@ const CachorroDoDia = () => {
       <Container className="mt-5 p-5">
         <Row className="align-items-center mb-4 sticky-top">
           <Col>
-            <h1>Cachorro do Dia</h1>
+            <h2>Cachorro do Dia</h2>
           </Col>
           <Col xs="auto">
             <Button variant="secondary" onClick={openModal}>
