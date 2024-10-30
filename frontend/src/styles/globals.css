@@ -1,221 +1,327 @@
+/* Define as cores de fundo e primeiro plano padrão */
 :root {
   --background: #ffffff;
+  /* Cor de fundo clara */
   --foreground: #171717;
+  /* Cor de texto escura */
 }
 
+/* Estilo para modo escuro */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
+    /* Cor de fundo escura */
     --foreground: #ededed;
+    /* Cor de texto clara */
   }
 }
 
+/* Estilo para html e body */
 html,
 body {
   max-width: 100vw;
+  /* Limita a largura máxima da página */
   overflow-x: hidden;
+  /* Oculta o transbordamento horizontal */
 }
 
+/* Estilo do body */
 body {
   color: var(--foreground);
+  /* Cor do texto usando a variável */
   background: var(--background);
+  /* Cor de fundo usando a variável */
   font-family: Arial, Helvetica, sans-serif;
+  /* Fonte da página */
   -webkit-font-smoothing: antialiased;
+  /* Suavização de fonte para webkit */
   -moz-osx-font-smoothing: grayscale;
+  /* Suavização de fonte para moz */
 }
 
+/* Estilo para todos os elementos */
 * {
   box-sizing: border-box;
+  /* Inclui padding e bordas na largura e altura total */
   padding: 0;
+  /* Remove padding padrão */
   margin: 0;
+  /* Remove margem padrão */
 }
 
+/* Estilo para links */
 a {
   color: inherit;
+  /* Herda a cor do texto */
   text-decoration: none;
+  /* Remove sublinhado dos links */
 }
 
+/* Estilo para modo escuro */
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+    /* Define o esquema de cores para modo escuro */
   }
 }
 
-
-
+/* Estilo para a container principal */
 .container {
   text-align: center;
+  /* Centraliza o texto dentro do contêiner */
 }
 
+/* Estilo para o título dentro da container */
 .container h1 {
-  margin-top: 80px; 
+  margin-top: 80px;
+  /* Margem superior para o título */
 }
 
+/* Estilo para a primeira galeria de imagens */
 .images-container {
   display: flex;
+  /* Usa flexbox para layout */
   justify-content: center;
+  /* Centraliza as imagens horizontalmente */
   gap: 20px;
+  /* Espaçamento entre as imagens */
   margin-top: 20px;
+  /* Margem superior */
 }
 
+/* Estilo para as imagens da primeira galeria */
 .images-container img {
   width: 200px;
+  /* Largura fixa para as imagens */
   height: auto;
+  /* Altura automática para manter proporções */
   border-radius: 8px;
+  /* Bordas arredondadas nas imagens */
 }
 
+/* Estilo para a descrição */
 .description {
   margin-top: 20px;
+  /* Margem superior */
   font-size: 1.1em;
+  /* Tamanho da fonte */
   color: #555;
+  /* Cor da descrição */
 }
 
+/* Estilo para a barra de rodapé */
 .footer-bar {
   width: 100%;
+  /* Largura total */
   display: flex;
+  /* Usa flexbox para layout */
   justify-content: center;
+  /* Centraliza horizontalmente */
   text-align: center;
+  /* Centraliza o texto */
 }
 
+/* Estilo para o contêiner da barra de rodapé */
 .footer-bar .container {
   display: flex;
+  /* Usa flexbox para layout */
   flex-direction: column;
+  /* Alinha verticalmente */
   align-items: center;
+  /* Centraliza horizontalmente */
 }
-  
-.footer-text {
-  margin: 0;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-
-
-/* Estilo para o título */
-.latita-title {
-  font-size: 2.5rem; /* Tamanho do texto do título */
-  color: #000000; /* Cor do título */
-  text-align: center; /* Centraliza o título */
-  margin-bottom: 20px; /* Espaço abaixo do título */
-  font-weight: bold; /* Negrito */
-}
-
-/* Estilo para o parágrafo */
-.latita-description {
-  font-size: 1.2rem; /* Tamanho do texto do parágrafo */
-  line-height: 1.6; /* Espaçamento entre as linhas */
-  color: #333; /* Cor do texto */
-  max-width: 800px; /* Largura máxima do parágrafo */
-  margin: 0 auto; /* Centraliza o parágrafo */
-  padding: 0 20px; /* Espaçamento nas laterais */
-  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
-  border-radius: 8px; /* Bordas arredondadas */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Adicionando um efeito ao parágrafo ao passar o mouse */
-.latita-description:hover {
-  background-color: rgba(255, 255, 255, 1); /* Fundo sólido ao passar o mouse */
-  transition: background-color 0.3s ease; /* Transição suave */
-}
-
-
-
 
 /* Estilo para o texto do rodapé */
 .footer-text {
-  font-size: 12px; /* Tamanho do texto */
-  color: #ffffff; /* Cor do texto (branco) */
-  text-align: center; /* Centraliza o texto */
-  margin: 5px 0; /* Margem acima e abaixo do texto */
-  opacity: 0.8; /* Levemente transparente */
-  transition: opacity 0.3s ease; /* Transição suave para o hover */
+  margin: 0;
+  /* Remove margens */
+  color: #ffffff;
+  /* Cor do texto (branco) */
+  font-size: 14px;
+  /* Tamanho do texto */
+}
+
+/* Estilo para o título "latita" */
+.latita-title {
+  font-size: 2.5rem;
+  /* Tamanho do texto do título */
+  color: #000000;
+  /* Cor do título */
+  text-align: center;
+  /* Centraliza o título */
+  margin-bottom: 20px;
+  /* Espaço abaixo do título */
+  font-weight: bold;
+  /* Negrito */
+}
+
+/* Estilo para o parágrafo "latita" */
+.latita-description {
+  font-size: 1.2rem;
+  /* Tamanho do texto do parágrafo */
+  line-height: 1.6;
+  /* Espaçamento entre as linhas */
+  color: #333;
+  /* Cor do texto */
+  max-width: 800px;
+  /* Largura máxima do parágrafo */
+  margin: 0 auto;
+  /* Centraliza o parágrafo */
+  padding: 0 20px;
+  /* Espaçamento nas laterais */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Fundo branco com leve transparência */
+  border-radius: 8px;
+  /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+/* Efeito ao passar o mouse sobre o parágrafo "latita" */
+.latita-description:hover {
+  background-color: rgba(255, 255, 255, 1);
+  /* Fundo sólido ao passar o mouse */
+  transition: background-color 0.3s ease;
+  /* Transição suave */
+}
+
+/* Estilo para o texto do rodapé */
+.footer-text {
+  font-size: 12px;
+  /* Tamanho do texto */
+  color: #ffffff;
+  /* Cor do texto (branco) */
+  text-align: center;
+  /* Centraliza o texto */
+  margin: 5px 0;
+  /* Margem acima e abaixo do texto */
+  opacity: 0.8;
+  /* Levemente transparente */
+  transition: opacity 0.3s ease;
+  /* Transição suave para o hover */
 }
 
 /* Efeito hover para o texto do rodapé */
 .footer-text:hover {
-  opacity: 1; /* Torna o texto totalmente opaco ao passar o mouse */
+  opacity: 1;
+  /* Torna o texto totalmente opaco ao passar o mouse */
 }
 
-
-
+/* Estilo para a barra de rodapé */
 .footer-bar {
-  padding: 0.5rem 1rem; /* Ajusta o padding superior/inferior */
-  height: 50px; /* Define uma altura fixa (opcional) */
-  display: flex; /* Usado para alinhar o conteúdo */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  padding: 0.5rem 1rem;
+  /* Ajusta o padding superior/inferior */
+  height: 50px;
+  /* Define uma altura fixa (opcional) */
+  display: flex;
+  /* Usado para alinhar o conteúdo */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
   background-color: rgba(0, 0, 0, 0.3);
+  /* Fundo com opacidade */
 }
 
-
+/* Estilo para a barra de navegação */
 .nav-bar {
-  display: flex; /* Usado para alinhar o conteúdo */
-  align-items: center; /* Centraliza o conteúdo verticalmente */
+  display: flex;
+  /* Usado para alinhar o conteúdo */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente */
   background-color: rgba(0, 0, 0, 0.6);
+  /* Fundo com opacidade */
 }
 
-
-
+/* Estilo para a barra de rodapé */
 .footer-bar {
-  background-color: rgba(0, 0, 0, 0.6); /* Preto com 90% de opacidade */
-  color: white; /* Cor do texto da Navbar */
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Preto com 90% de opacidade */
+  color: white;
+  /* Cor do texto da Navbar */
 }
 
+/* Estilo para os links da barra de rodapé */
 .footer-bar .nav-link {
-  color: white; /* Cor dos links */
-  transition: color 0.3s; /* Efeito de transição suave para o hover */
+  color: white;
+  /* Cor dos links */
+  transition: color 0.3s;
+  /* Efeito de transição suave para o hover */
 }
 
+/* Efeito hover para os links da barra de rodapé */
 .footer-bar .nav-link:hover {
-  color: #ffa500; /* Cor dos links ao passar o mouse */
+  color: #ffa500;
+  /* Cor dos links ao passar o mouse */
 }
 
+/* Estilo para a segunda galeria de imagens */
 .images-container2 {
   display: flex;
+  /* Usa flexbox para layout */
   justify-content: center;
+  /* Centraliza as imagens horizontalmente */
   gap: 10px;
+  /* Espaçamento entre as imagens */
   margin-top: 10px;
+  /* Margem superior */
 }
 
+/* Estilo para as imagens da segunda galeria */
 .images-container2 img {
-  width: 300px;  /* Ajuste conforme necessário */
-  height: 300px; /* Ajuste conforme necessário */
-  object-fit: cover; /* Mantém a proporção da imagem */
+  width: 300px;
+  /* Ajuste conforme necessário */
+  height: 300px;
+  /* Ajuste conforme necessário */
+  object-fit: cover;
+  /* Mantém a proporção da imagem */
 }
 
-
-
-
-
+/* Estilo para o contêiner das abas */
 .tabs-container {
   display: flex;
-  flex-direction: column; /* Para alinhar verticalmente */
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  height: 100vh; /* A altura total da tela */
+  /* Usa flexbox para layout */
+  flex-direction: column;
+  /* Alinha verticalmente */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  height: 100vh;
+  /* A altura total da tela */
 }
 
+/* Estilo para a tabela */
 .table-container {
-  width: 100%; /* Largura da tabela */
-  margin-top: 20px; /* Espaço acima da tabela */
+  width: 100%;
+  /* Largura da tabela */
+  margin-top: 20px;
+  /* Espaço acima da tabela */
 }
 
+/* Estilo personalizado para a tabela */
 .custom-table {
-  width: 100%; /* Tabela ocupa toda a largura do contêiner */
-  border-collapse: collapse; /* Remove espaçamento entre as células */
-  background-color: white; /* Fundo branco para a tabela */
-  color: black; /* Cor do texto preto */
+  width: 100%;
+  /* Tabela ocupa toda a largura do contêiner */
+  border-collapse: collapse;
+  /* Remove espaçamento entre as células */
+  background-color: white;
+  /* Fundo branco para a tabela */
+  color: black;
+  /* Cor do texto preto */
 }
 
+/* Estilo para cabeçalhos e células da tabela */
 .custom-table th,
 .custom-table td {
-  padding: 30px; /* Espaçamento interno das células */
-  text-align: left; /* Alinha o texto à esquerda */
-  border: 1px solid #ccc; /* Borda cinza clara para as células */
+  padding: 30px;
+  /* Espaçamento interno das células */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  border: 1px solid #ccc;
+  /* Borda cinza clara para as células */
 }
 
+/* Estilo para cabeçalhos da tabela */
 .custom-table th {
-  background-color: #f0f0f0; /* Fundo cinza claro para o cabeçalho */
+  background-color: #f0f0f0;
+  /* Fundo cinza claro para o cabeçalho */
 }
-
-
