@@ -53,7 +53,7 @@ const NavBar = () => {
                     Nosso Mascote
                   </Nav.Link>
 
-                  <Nav.Link as={Link} passHref href="/pets">
+                  <Nav.Link as={Link} passHref href="/ListPet">
                     Nossos Family Pets
                   </Nav.Link>
 
